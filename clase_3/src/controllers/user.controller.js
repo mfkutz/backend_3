@@ -18,8 +18,6 @@ export class UserController {
       if (!first_name || !last_name || !email || !password) {
         CustomError.newError(errors.badRequest);
       }
-
-      console.log("pasó el if");
       const user = await UserService.createUser({
         first_name,
         last_name,
