@@ -1,12 +1,26 @@
 import { productService } from "../services/product.service.js";
 import { faker } from "@faker-js/faker";
 import { v4 as uuidv4 } from "uuid";
+import { CustomError } from "../utils/errors/custom.error.js";
+import errors from "../utils/errors/dictionaty.errors.js";
 
 class ProductController {
-  async addProduct(req, res) {
+  async addProduct(req, res, next) {
     let { title, description, price, thumbnail, status, code, stock, category } = req.body;
 
     try {
+      if (
+        !title ||
+        !description ||
+        !price ||
+        !thumbnail ||
+        !status ||
+        !code ||
+        !stock ||
+        !category
+      ) {
+        CustomError.newError(errors.badRequest);
+      }
       let product = await productService.create({
         title,
         description,
@@ -19,45 +33,44 @@ class ProductController {
       });
       res.status(201).json({ result: "Success", details: product });
     } catch (error) {
-      res.status(500).json({ response: "Server error", details: error.message });
+      next(error);
     }
   }
 
-  async getAll(req, res) {
+  async getAll(req, res, next) {
     try {
       const allProducts = await productService.getAll();
       res.status(200).json({ result: "Success", products: allProducts });
     } catch (error) {
-      res.status(500).json({ response: "Server error", details: error.message });
+      next(error);
     }
   }
 
-  async getById(req, res) {
+  async getById(req, res, next) {
     const { id } = req.params;
     try {
       const product = await productService.getById(id);
-      if (!product) return res.status(404).json({ result: "Product not found" });
+      if (!product) CustomError.newError(errors.notFound);
+
       res.status(200).json({ result: "Product found", product });
     } catch (error) {
-      res.status(500).json({ response: "Server error", details: error.message });
+      next(error);
     }
   }
 
-  async deleteProduct(req, res) {
+  async deleteProduct(req, res, next) {
     const { id } = req.params;
     try {
       const product = await productService.delete(id);
-      if (!product)
-        return res
-          .status(404)
-          .json({ response: "Error deleting product", details: "Product not found" });
+      if (!product) CustomError.newError(errors.notFound);
+
       res.status(200).json({ response: "Product deleted successfully", message: product });
     } catch (error) {
-      res.status(500).json({ response: "Server error", details: error.message });
+      next(error);
     }
   }
 
-  async createProductsFake(req, res) {
+  async createProductsFake(req, res, next) {
     const { quantity } = req.params;
     try {
       for (let i = 0; i < quantity; i++) {
@@ -85,7 +98,7 @@ class ProductController {
         .status(200)
         .json({ response: "Product created", details: `Total products created:${quantity}` });
     } catch (error) {
-      res.status(500).json({ response: "Server error", details: error.message });
+      next(error);
     }
   }
 }
