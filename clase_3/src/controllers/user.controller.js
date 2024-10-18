@@ -1,18 +1,18 @@
-import { userService } from "../services/user.service.js";
+import { UserService } from "../services/user.service.js";
 import { CustomError } from "../utils/errors/custom.error.js";
 import errors from "../utils/errors/dictionaty.errors.js";
 
-class UserController {
-  async getAllUsers(req, res, next) {
+export class UserController {
+  static async getAllUsers(req, res, next) {
     try {
-      const users = await userService.getAllUsers();
+      const users = await UserService.getAllUsers();
       res.status(200).json(users);
     } catch (error) {
       next(error);
     }
   }
 
-  async createUser(req, res, next) {
+  static async createUser(req, res, next) {
     const { first_name, last_name, email, password } = req.body;
     try {
       if (!first_name || !last_name || !email || !password) {
@@ -20,7 +20,7 @@ class UserController {
       }
 
       console.log("pasó el if");
-      const user = await userService.createUser({
+      const user = await UserService.createUser({
         first_name,
         last_name,
         email,
@@ -32,10 +32,10 @@ class UserController {
     }
   }
 
-  async deleteUser(req, res, next) {
+  static async deleteUser(req, res, next) {
     const { id } = req.params;
     try {
-      const user = await userService.deleteUser(id);
+      const user = await UserService.deleteUser(id);
       if (!user) {
         return CustomError.newError(errors.notFound);
       }
@@ -45,5 +45,3 @@ class UserController {
     }
   }
 }
-
-export const userController = new UserController();

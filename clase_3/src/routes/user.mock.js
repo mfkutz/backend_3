@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { userMock } from "../controllers/user.mock.js";
+import { UserMock } from "../controllers/user.mock.js";
 
 const router = Router();
 
-router.post("/createUser", userMock.createUser);
-router.post("/createUsers/:quantity", userMock.createUsers);
+router.post("/createUser", UserMock.createUser);
+router.post("/createUsers/:quantity", UserMock.createUsers);
 
 export default router;

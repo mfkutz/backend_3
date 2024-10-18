@@ -1,11 +1,11 @@
-import { productService } from "../services/product.service.js";
+import { ProductService } from "../services/product.service.js";
 import { faker } from "@faker-js/faker";
 import { v4 as uuidv4 } from "uuid";
 import { CustomError } from "../utils/errors/custom.error.js";
 import errors from "../utils/errors/dictionaty.errors.js";
 
-class ProductController {
-  async addProduct(req, res, next) {
+export class ProductController {
+  static async addProduct(req, res, next) {
     let { title, description, price, thumbnail, status, code, stock, category } = req.body;
 
     try {
@@ -21,7 +21,7 @@ class ProductController {
       ) {
         CustomError.newError(errors.badRequest);
       }
-      let product = await productService.create({
+      let product = await ProductService.create({
         title,
         description,
         price,
@@ -37,19 +37,19 @@ class ProductController {
     }
   }
 
-  async getAll(req, res, next) {
+  static async getAll(req, res, next) {
     try {
-      const allProducts = await productService.getAll();
+      const allProducts = await ProductService.getAll();
       res.status(200).json({ result: "Success", products: allProducts });
     } catch (error) {
       next(error);
     }
   }
 
-  async getById(req, res, next) {
+  static async getById(req, res, next) {
     const { id } = req.params;
     try {
-      const product = await productService.getById(id);
+      const product = await ProductService.getById(id);
       if (!product) CustomError.newError(errors.notFound);
 
       res.status(200).json({ result: "Product found", product });
@@ -58,10 +58,10 @@ class ProductController {
     }
   }
 
-  async deleteProduct(req, res, next) {
+  static async deleteProduct(req, res, next) {
     const { id } = req.params;
     try {
-      const product = await productService.delete(id);
+      const product = await ProductService.delete(id);
       if (!product) CustomError.newError(errors.notFound);
 
       res.status(200).json({ response: "Product deleted successfully", message: product });
@@ -70,7 +70,7 @@ class ProductController {
     }
   }
 
-  async createProductsFake(req, res, next) {
+  static async createProductsFake(req, res, next) {
     const { quantity } = req.params;
     try {
       for (let i = 0; i < quantity; i++) {
@@ -92,7 +92,7 @@ class ProductController {
           stock,
           category,
         };
-        await productService.create(data);
+        await ProductService.create(data);
       }
       res
         .status(200)
@@ -102,5 +102,3 @@ class ProductController {
     }
   }
 }
-
-export const productController = new ProductController();
