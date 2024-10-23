@@ -1,11 +1,1 @@
-[31mfatal[39m: look here!
-[31mfatal[39m: look here!
-[31mfatal[39m: look here!
-[31mfatal[39m: GET /api/user - WINSTONLOGGE IS NOT DEFINED hola desde errorHandler
-[31mfatal[39m: GET /api/user - WINSTONLOGGE IS NOT DEFINED hola desde errorHandler
-[31mfatal[39m: GET /api/user - WINSTONLOGGE IS NOT DEFINED {"timestamp":"2024-10-23T13:26:53.847Z"}
-[31mfatal[39m: GET /api/user - WINSTONLOGGE IS NOT DEFINED {"timestamp":"2024-10-23T13:27:48.779Z"}
-[31mfatal[39m: GET /api/user - WINSTONLOGGER.ER IS NOT A FUNCTION {"timestamp":"2024-10-23T13:28:46.024Z"}
-[31mfatal[39m: GET /api/user - WINSTONLOGGER.ERRROR IS NOT A FUNCTION {"timestamp":"2024-10-23T13:29:05.169Z"}
-[33merror[39m: look here! {"timestamp":"2024-10-23T13:29:21.362Z"}
-[31mfatal[39m: GET /api/user - USERSERVICE.GETALLUSES IS NOT A FUNCTION {"timestamp":"2024-10-23T13:29:47.876Z"}
+[31mfatal[39m: MongoDB connection error: mongoose.connec is not a function {"timestamp":"2024-10-23T15:58:54.964Z"}

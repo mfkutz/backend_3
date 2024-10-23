@@ -20,10 +20,10 @@ app.use(
     brotli: { enabled: true, zlib: {} },
   })
 );
-app.use(loggerWinston);
 
 //Mongoose Database
 connectDB();
+app.use(loggerWinston);
 
 //Routes
 app.use("/api", indexRoutes);
