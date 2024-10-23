@@ -6,7 +6,10 @@
   "scripts": {
     "test": "nodemon src/server -m testing",
     "dev": "nodemon src/server.js -m development",
-    "start": "node src/server.js -m production"
+    "start": "node src/server.js -m production",
+    "simplex": "artillery quick --count 20 --num 50 \"http://localhost:5000/api/testing/simplex\" -o ./test/artillery/quick/simplex.json",
+    "complex": "artillery quick --count 20 --num 50 \"http://localhost:5000/api/testing/complex\" -o ./test/artillery/quick/complex.json"
+
   },
   "keywords": [],
   "author": "",
@@ -24,6 +27,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.0.3",
+    "artillery": "^2.0.21",
     "nodemon": "^3.1.7"
   }
 }
