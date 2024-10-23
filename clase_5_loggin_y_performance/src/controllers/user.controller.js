@@ -1,6 +1,7 @@
 import { UserService } from "../services/user.service.js";
 import { CustomError } from "../utils/errors/custom.error.js";
 import errors from "../utils/errors/dictionaty.errors.js";
+import winstonLogger from "../utils/winston.util.js";
 
 export class UserController {
   static async getAllUsers(req, res, next) {

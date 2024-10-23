@@ -45,7 +45,7 @@ const errors = {
     statusCode: 429,
     description: "You have exceeded the rate limit.",
   },
-  internalServerError: {
+  fatal: {
     message: "Internal Server Error",
     statusCode: 500,
     description: "An unexpected error occurred on the server.",
