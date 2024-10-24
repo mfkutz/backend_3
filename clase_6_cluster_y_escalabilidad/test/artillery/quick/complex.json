@@ -1,338 +1,1229 @@
 {
   "aggregate": {
-    "counters": {
-      "vusers.created_by_name.0": 20,
-      "vusers.created": 20,
-      "http.requests": 31,
-      "http.codes.200": 11,
-      "http.responses": 11,
-      "http.downloaded_bytes": 308,
-      "plugins.metrics-by-endpoint./api/testing/complex.codes.200": 11,
-      "plugins.metrics-by-endpoint./api/testing/complex.errors.ETIMEDOUT": 18,
-      "errors.ETIMEDOUT": 18,
-      "vusers.failed": 20,
-      "plugins.metrics-by-endpoint./api/testing/complex.errors.ECONNRESET": 2,
-      "errors.ECONNRESET": 2
+    "timestamp": "2024-10-24T22:24:56.476Z",
+    "scenariosCreated": 20,
+    "scenariosCompleted": 8,
+    "requestsCompleted": 400,
+    "latency": {
+      "min": 898,
+      "max": 7354,
+      "median": 3843,
+      "p95": 5079.5,
+      "p99": 6292
     },
-    "rates": {
-      "http.request_rate": 2
+    "rps": {
+      "count": 412,
+      "mean": 2.03
     },
-    "firstCounterAt": 1729707503476,
-    "firstHistogramAt": 1729707504600,
-    "lastCounterAt": 1729707522142,
-    "lastHistogramAt": 1729707513489,
-    "firstMetricAt": 1729707503476,
-    "lastMetricAt": 1729707522142,
-    "period": 1729707520000,
-    "summaries": {
-      "http.response_time": {
-        "min": 1094,
-        "max": 9510,
-        "count": 11,
-        "mean": 5401.5,
-        "p50": 5378.9,
-        "median": 5378.9,
-        "p75": 7260.8,
-        "p90": 8692.8,
-        "p95": 8692.8,
-        "p99": 8692.8,
-        "p999": 8692.8
-      },
-      "http.response_time.2xx": {
-        "min": 1094,
-        "max": 9510,
-        "count": 11,
-        "mean": 5401.5,
-        "p50": 5378.9,
-        "median": 5378.9,
-        "p75": 7260.8,
-        "p90": 8692.8,
-        "p95": 8692.8,
-        "p99": 8692.8,
-        "p999": 8692.8
-      },
-      "plugins.metrics-by-endpoint.response_time./api/testing/complex": {
-        "min": 1094,
-        "max": 9510,
-        "count": 11,
-        "mean": 5401.5,
-        "p50": 5378.9,
-        "median": 5378.9,
-        "p75": 7260.8,
-        "p90": 8692.8,
-        "p95": 8692.8,
-        "p99": 8692.8,
-        "p999": 8692.8
+    "scenarioDuration": {
+      "min": 189917.7,
+      "max": 200875.1,
+      "median": 198839.4,
+      "p95": 200875.1,
+      "p99": 200875.1
+    },
+    "scenarioCounts": {
+      "0": 20
+    },
+    "errors": {
+      "ETIMEDOUT": 12
+    },
+    "codes": {
+      "200": 400
+    },
+    "matches": 0,
+    "customStats": {},
+    "counters": {},
+    "scenariosAvoided": 0,
+    "phases": [
+      {
+        "duration": 1,
+        "arrivalCount": "20",
+        "mode": "uniform"
       }
-    },
-    "histograms": {
-      "http.response_time": {
-        "min": 1094,
-        "max": 9510,
-        "count": 11,
-        "mean": 5401.5,
-        "p50": 5378.9,
-        "median": 5378.9,
-        "p75": 7260.8,
-        "p90": 8692.8,
-        "p95": 8692.8,
-        "p99": 8692.8,
-        "p999": 8692.8
-      },
-      "http.response_time.2xx": {
-        "min": 1094,
-        "max": 9510,
-        "count": 11,
-        "mean": 5401.5,
-        "p50": 5378.9,
-        "median": 5378.9,
-        "p75": 7260.8,
-        "p90": 8692.8,
-        "p95": 8692.8,
-        "p99": 8692.8,
-        "p999": 8692.8
-      },
-      "plugins.metrics-by-endpoint.response_time./api/testing/complex": {
-        "min": 1094,
-        "max": 9510,
-        "count": 11,
-        "mean": 5401.5,
-        "p50": 5378.9,
-        "median": 5378.9,
-        "p75": 7260.8,
-        "p90": 8692.8,
-        "p95": 8692.8,
-        "p99": 8692.8,
-        "p999": 8692.8
-      }
-    }
+    ]
   },
   "intermediate": [
     {
-      "counters": {
-        "vusers.created_by_name.0": 20,
-        "vusers.created": 20,
-        "http.requests": 26,
-        "http.codes.200": 6,
-        "http.responses": 6,
-        "http.downloaded_bytes": 168,
-        "plugins.metrics-by-endpoint./api/testing/complex.codes.200": 6
+      "timestamp": "2024-10-24T22:21:44.725Z",
+      "scenariosCreated": 20,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 14,
+      "latency": {
+        "min": 2326,
+        "max": 7354,
+        "median": 3767,
+        "p95": 7348,
+        "p99": 7354
       },
-      "rates": {
-        "http.request_rate": 5
+      "rps": {
+        "count": 34,
+        "mean": 3.12
       },
-      "http.request_rate": null,
-      "firstCounterAt": 1729707503476,
-      "firstHistogramAt": 1729707504600,
-      "lastCounterAt": 1729707509130,
-      "lastHistogramAt": 1729707509130,
-      "firstMetricAt": 1729707503476,
-      "lastMetricAt": 1729707509130,
-      "period": "1729707500000",
-      "summaries": {
-        "http.response_time": {
-          "min": 1094,
-          "max": 5401,
-          "count": 6,
-          "mean": 3261.8,
-          "p50": 2725,
-          "median": 2725,
-          "p75": 3678.4,
-          "p90": 4676.2,
-          "p95": 4676.2,
-          "p99": 4676.2,
-          "p999": 4676.2
-        },
-        "http.response_time.2xx": {
-          "min": 1094,
-          "max": 5401,
-          "count": 6,
-          "mean": 3261.8,
-          "p50": 2725,
-          "median": 2725,
-          "p75": 3678.4,
-          "p90": 4676.2,
-          "p95": 4676.2,
-          "p99": 4676.2,
-          "p999": 4676.2
-        },
-        "plugins.metrics-by-endpoint.response_time./api/testing/complex": {
-          "min": 1094,
-          "max": 5401,
-          "count": 6,
-          "mean": 3261.8,
-          "p50": 2725,
-          "median": 2725,
-          "p75": 3678.4,
-          "p90": 4676.2,
-          "p95": 4676.2,
-          "p99": 4676.2,
-          "p999": 4676.2
-        }
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
       },
-      "histograms": {
-        "http.response_time": {
-          "min": 1094,
-          "max": 5401,
-          "count": 6,
-          "mean": 3261.8,
-          "p50": 2725,
-          "median": 2725,
-          "p75": 3678.4,
-          "p90": 4676.2,
-          "p95": 4676.2,
-          "p99": 4676.2,
-          "p999": 4676.2
-        },
-        "http.response_time.2xx": {
-          "min": 1094,
-          "max": 5401,
-          "count": 6,
-          "mean": 3261.8,
-          "p50": 2725,
-          "median": 2725,
-          "p75": 3678.4,
-          "p90": 4676.2,
-          "p95": 4676.2,
-          "p99": 4676.2,
-          "p999": 4676.2
-        },
-        "plugins.metrics-by-endpoint.response_time./api/testing/complex": {
-          "min": 1094,
-          "max": 5401,
-          "count": 6,
-          "mean": 3261.8,
-          "p50": 2725,
-          "median": 2725,
-          "p75": 3678.4,
-          "p90": 4676.2,
-          "p95": 4676.2,
-          "p99": 4676.2,
-          "p999": 4676.2
-        }
-      }
+      "scenarioCounts": {
+        "0": 20
+      },
+      "errors": {},
+      "codes": {
+        "200": 14
+      },
+      "matches": 0,
+      "latencies": [
+        2344000000,
+        2405000000,
+        3714000000,
+        3790000000,
+        2326000000,
+        2433000000,
+        4369000000,
+        4205000000,
+        3743000000,
+        3793000000,
+        3832000000,
+        3744000000,
+        7354000000,
+        7324000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 20,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
     },
     {
-      "counters": {
-        "http.codes.200": 5,
-        "http.responses": 5,
-        "http.downloaded_bytes": 140,
-        "plugins.metrics-by-endpoint./api/testing/complex.codes.200": 5,
-        "http.requests": 5,
-        "plugins.metrics-by-endpoint./api/testing/complex.errors.ETIMEDOUT": 15,
-        "errors.ETIMEDOUT": 15,
-        "vusers.failed": 15
+      "timestamp": "2024-10-24T22:21:54.636Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 16,
+      "latency": {
+        "min": 1213,
+        "max": 5670,
+        "median": 4651.5,
+        "p95": 5580,
+        "p99": 5670
       },
-      "rates": {
-        "http.request_rate": 1
+      "rps": {
+        "count": 16,
+        "mean": 1.62
       },
-      "http.request_rate": null,
-      "firstCounterAt": 1729707510085,
-      "firstHistogramAt": 1729707510085,
-      "lastCounterAt": 1729707519130,
-      "lastHistogramAt": 1729707513489,
-      "firstMetricAt": 1729707510085,
-      "lastMetricAt": 1729707519130,
-      "period": "1729707510000",
-      "summaries": {
-        "http.response_time": {
-          "min": 6307,
-          "max": 9510,
-          "count": 5,
-          "mean": 7969.2,
-          "p50": 8024.5,
-          "median": 8024.5,
-          "p75": 8692.8,
-          "p90": 8692.8,
-          "p95": 8692.8,
-          "p99": 8692.8,
-          "p999": 8692.8
-        },
-        "http.response_time.2xx": {
-          "min": 6307,
-          "max": 9510,
-          "count": 5,
-          "mean": 7969.2,
-          "p50": 8024.5,
-          "median": 8024.5,
-          "p75": 8692.8,
-          "p90": 8692.8,
-          "p95": 8692.8,
-          "p99": 8692.8,
-          "p999": 8692.8
-        },
-        "plugins.metrics-by-endpoint.response_time./api/testing/complex": {
-          "min": 6307,
-          "max": 9510,
-          "count": 5,
-          "mean": 7969.2,
-          "p50": 8024.5,
-          "median": 8024.5,
-          "p75": 8692.8,
-          "p90": 8692.8,
-          "p95": 8692.8,
-          "p99": 8692.8,
-          "p999": 8692.8
-        }
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
       },
-      "histograms": {
-        "http.response_time": {
-          "min": 6307,
-          "max": 9510,
-          "count": 5,
-          "mean": 7969.2,
-          "p50": 8024.5,
-          "median": 8024.5,
-          "p75": 8692.8,
-          "p90": 8692.8,
-          "p95": 8692.8,
-          "p99": 8692.8,
-          "p999": 8692.8
-        },
-        "http.response_time.2xx": {
-          "min": 6307,
-          "max": 9510,
-          "count": 5,
-          "mean": 7969.2,
-          "p50": 8024.5,
-          "median": 8024.5,
-          "p75": 8692.8,
-          "p90": 8692.8,
-          "p95": 8692.8,
-          "p99": 8692.8,
-          "p999": 8692.8
-        },
-        "plugins.metrics-by-endpoint.response_time./api/testing/complex": {
-          "min": 6307,
-          "max": 9510,
-          "count": 5,
-          "mean": 7969.2,
-          "p50": 8024.5,
-          "median": 8024.5,
-          "p75": 8692.8,
-          "p90": 8692.8,
-          "p95": 8692.8,
-          "p99": 8692.8,
-          "p999": 8692.8
-        }
-      }
+      "scenarioCounts": {},
+      "errors": {
+        "ETIMEDOUT": 12
+      },
+      "codes": {
+        "200": 16
+      },
+      "matches": 0,
+      "latencies": [
+        1213000000,
+        4635000000,
+        5670000000,
+        4319000000,
+        5370000000,
+        4344000000,
+        5234000000,
+        4122000000,
+        4835000000,
+        4745000000,
+        4557000000,
+        4558000000,
+        4666000000,
+        4637000000,
+        4853000000,
+        4765000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
     },
     {
-      "counters": {
-        "plugins.metrics-by-endpoint./api/testing/complex.errors.ETIMEDOUT": 3,
-        "errors.ETIMEDOUT": 3,
-        "vusers.failed": 5,
-        "plugins.metrics-by-endpoint./api/testing/complex.errors.ECONNRESET": 2,
-        "errors.ECONNRESET": 2
+      "timestamp": "2024-10-24T22:22:04.773Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 18,
+      "latency": {
+        "min": 3946,
+        "max": 5399,
+        "median": 4768.5,
+        "p95": 5262.2,
+        "p99": 5399
       },
-      "rates": {},
-      "firstCounterAt": 1729707520099,
-      "lastCounterAt": 1729707522142,
-      "firstMetricAt": 1729707520099,
-      "lastMetricAt": 1729707522142,
-      "period": "1729707520000",
-      "summaries": {},
-      "histograms": {}
+      "rps": {
+        "count": 18,
+        "mean": 1.78
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 18
+      },
+      "matches": 0,
+      "latencies": [
+        5057000000,
+        5057000000,
+        4767000000,
+        4770000000,
+        4843000000,
+        4965000000,
+        4810000000,
+        4918000000,
+        3946000000,
+        4512000000,
+        5399000000,
+        4976000000,
+        4721000000,
+        4720000000,
+        4619000000,
+        4619000000,
+        4753000000,
+        4753000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:22:14.926Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 16,
+      "latency": {
+        "min": 4649,
+        "max": 4913,
+        "median": 4796,
+        "p95": 4907.3,
+        "p99": 4913
+      },
+      "rps": {
+        "count": 16,
+        "mean": 1.58
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 16
+      },
+      "matches": 0,
+      "latencies": [
+        4782000000,
+        4649000000,
+        4765000000,
+        4765000000,
+        4703000000,
+        4704000000,
+        4810000000,
+        4913000000,
+        4839000000,
+        4863000000,
+        4820000000,
+        4820000000,
+        4893000000,
+        4894000000,
+        4684000000,
+        4700000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:22:24.931Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 22,
+      "latency": {
+        "min": 1211,
+        "max": 6915,
+        "median": 3673.5,
+        "p95": 6914.4,
+        "p99": 6915
+      },
+      "rps": {
+        "count": 22,
+        "mean": 2.2
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 22
+      },
+      "matches": 0,
+      "latencies": [
+        5262000000,
+        5241000000,
+        4669000000,
+        4670000000,
+        6914000000,
+        6915000000,
+        5089000000,
+        4969000000,
+        3566000000,
+        3566000000,
+        3180000000,
+        3211000000,
+        1211000000,
+        1432000000,
+        2449000000,
+        2462000000,
+        3318000000,
+        3318000000,
+        4121000000,
+        4141000000,
+        3470000000,
+        3781000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:22:35.198Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 20,
+      "latency": {
+        "min": 2986,
+        "max": 4423,
+        "median": 3664,
+        "p95": 4390.5,
+        "p99": 4423
+      },
+      "rps": {
+        "count": 20,
+        "mean": 1.95
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 20
+      },
+      "matches": 0,
+      "latencies": [
+        3983000000,
+        3969000000,
+        3371000000,
+        3518000000,
+        3453000000,
+        3576000000,
+        3621000000,
+        3704000000,
+        2986000000,
+        3281000000,
+        3631000000,
+        3704000000,
+        3767000000,
+        3879000000,
+        3624000000,
+        3697000000,
+        3578000000,
+        4195000000,
+        4358000000,
+        4423000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:22:45.423Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 22,
+      "latency": {
+        "min": 902,
+        "max": 5517,
+        "median": 3684.5,
+        "p95": 5419.2,
+        "p99": 5517
+      },
+      "rps": {
+        "count": 22,
+        "mean": 2.15
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 22
+      },
+      "matches": 0,
+      "latencies": [
+        5354000000,
+        5070000000,
+        5034000000,
+        5034000000,
+        5069000000,
+        4326000000,
+        4384000000,
+        4230000000,
+        3289000000,
+        3288000000,
+        3626000000,
+        3485000000,
+        3671000000,
+        3698000000,
+        3520000000,
+        1770000000,
+        3471000000,
+        902000000,
+        3566000000,
+        5323000000,
+        2789000000,
+        5517000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:22:55.602Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 22,
+      "latency": {
+        "min": 927,
+        "max": 5295,
+        "median": 3659,
+        "p95": 5227.8,
+        "p99": 5295
+      },
+      "rps": {
+        "count": 22,
+        "mean": 2.16
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 22
+      },
+      "matches": 0,
+      "latencies": [
+        5183000000,
+        4985000000,
+        3777000000,
+        3728000000,
+        3797000000,
+        3654000000,
+        3664000000,
+        3574000000,
+        3037000000,
+        3164000000,
+        3473000000,
+        3575000000,
+        3463000000,
+        3588000000,
+        3447000000,
+        927000000,
+        3368000000,
+        4422000000,
+        3806000000,
+        4825000000,
+        4446000000,
+        5295000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:23:05.385Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 20,
+      "latency": {
+        "min": 3002,
+        "max": 4670,
+        "median": 3907.5,
+        "p95": 4646.5,
+        "p99": 4670
+      },
+      "rps": {
+        "count": 20,
+        "mean": 2.04
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 20
+      },
+      "matches": 0,
+      "latencies": [
+        4610000000,
+        4670000000,
+        4598000000,
+        4623000000,
+        4270000000,
+        4169000000,
+        3922000000,
+        4033000000,
+        3825000000,
+        3672000000,
+        3875000000,
+        3815000000,
+        3934000000,
+        3814000000,
+        3893000000,
+        3830000000,
+        3882000000,
+        3950000000,
+        3861000000,
+        3002000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:23:15.434Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 21,
+      "latency": {
+        "min": 3607,
+        "max": 4937,
+        "median": 3815,
+        "p95": 4504.2,
+        "p99": 4937
+      },
+      "rps": {
+        "count": 21,
+        "mean": 2.09
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 21
+      },
+      "matches": 0,
+      "latencies": [
+        4150000000,
+        4937000000,
+        3788000000,
+        3843000000,
+        3815000000,
+        3807000000,
+        4053000000,
+        3934000000,
+        3750000000,
+        3887000000,
+        3820000000,
+        3861000000,
+        3823000000,
+        3918000000,
+        3675000000,
+        3671000000,
+        3617000000,
+        3636000000,
+        3720000000,
+        3607000000,
+        3794000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:23:25.773Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 22,
+      "latency": {
+        "min": 948,
+        "max": 4621,
+        "median": 3768.5,
+        "p95": 4616.8,
+        "p99": 4621
+      },
+      "rps": {
+        "count": 22,
+        "mean": 2.13
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 22
+      },
+      "matches": 0,
+      "latencies": [
+        4215000000,
+        3619000000,
+        3722000000,
+        948000000,
+        3732000000,
+        4621000000,
+        3691000000,
+        4556000000,
+        3028000000,
+        4614000000,
+        3813000000,
+        3791000000,
+        3869000000,
+        3838000000,
+        3790000000,
+        3843000000,
+        3899000000,
+        3601000000,
+        3747000000,
+        3629000000,
+        3672000000,
+        3652000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:23:35.730Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 20,
+      "latency": {
+        "min": 3163,
+        "max": 4421,
+        "median": 3916,
+        "p95": 4333.5,
+        "p99": 4421
+      },
+      "rps": {
+        "count": 20,
+        "mean": 2.01
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 20
+      },
+      "matches": 0,
+      "latencies": [
+        4421000000,
+        3637000000,
+        3659000000,
+        3726000000,
+        3875000000,
+        3889000000,
+        3787000000,
+        3773000000,
+        3163000000,
+        3943000000,
+        3950000000,
+        3968000000,
+        3772000000,
+        3842000000,
+        4015000000,
+        4233000000,
+        4246000000,
+        4086000000,
+        4085000000,
+        4071000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:23:46.151Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 23,
+      "latency": {
+        "min": 2805,
+        "max": 4776,
+        "median": 3745,
+        "p95": 4772.8,
+        "p99": 4776
+      },
+      "rps": {
+        "count": 23,
+        "mean": 2.21
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 23
+      },
+      "matches": 0,
+      "latencies": [
+        4776000000,
+        4102000000,
+        3974000000,
+        3750000000,
+        3604000000,
+        3745000000,
+        3689000000,
+        3634000000,
+        2943000000,
+        3575000000,
+        3548000000,
+        3603000000,
+        3651000000,
+        3568000000,
+        3609000000,
+        3746000000,
+        2805000000,
+        3820000000,
+        4771000000,
+        3809000000,
+        3779000000,
+        3827000000,
+        3787000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:23:56.162Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 19,
+      "latency": {
+        "min": 2843,
+        "max": 5067,
+        "median": 4000,
+        "p95": 4771.8,
+        "p99": 5067
+      },
+      "rps": {
+        "count": 19,
+        "mean": 1.9
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 19
+      },
+      "matches": 0,
+      "latencies": [
+        4036000000,
+        3963000000,
+        4056000000,
+        3863000000,
+        3917000000,
+        4087000000,
+        4000000000,
+        2843000000,
+        3611000000,
+        5067000000,
+        3617000000,
+        3862000000,
+        3720000000,
+        3778000000,
+        4300000000,
+        4370000000,
+        4411000000,
+        4256000000,
+        4319000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:06.299Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 20,
+      "latency": {
+        "min": 1020,
+        "max": 5179,
+        "median": 4182,
+        "p95": 5116.5,
+        "p99": 5179
+      },
+      "rps": {
+        "count": 20,
+        "mean": 1.97
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 20
+      },
+      "matches": 0,
+      "latencies": [
+        4986000000,
+        4500000000,
+        4478000000,
+        3983000000,
+        4040000000,
+        4124000000,
+        4124000000,
+        4367000000,
+        1020000000,
+        4242000000,
+        4569000000,
+        4335000000,
+        5179000000,
+        4193000000,
+        5054000000,
+        4085000000,
+        4171000000,
+        3981000000,
+        3784000000,
+        3690000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:16.328Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 21,
+      "latency": {
+        "min": 909,
+        "max": 4801,
+        "median": 3762,
+        "p95": 4789.5,
+        "p99": 4801
+      },
+      "rps": {
+        "count": 21,
+        "mean": 2.09
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 21
+      },
+      "matches": 0,
+      "latencies": [
+        4549000000,
+        3863000000,
+        3904000000,
+        1023000000,
+        3684000000,
+        4685000000,
+        3892000000,
+        4801000000,
+        2725000000,
+        4745000000,
+        909000000,
+        3694000000,
+        4780000000,
+        4523000000,
+        3735000000,
+        4422000000,
+        3622000000,
+        3594000000,
+        3725000000,
+        3620000000,
+        3762000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:26.306Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 22,
+      "latency": {
+        "min": 3162,
+        "max": 4328,
+        "median": 3846.5,
+        "p95": 4328,
+        "p99": 4328
+      },
+      "rps": {
+        "count": 22,
+        "mean": 2.2
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 22
+      },
+      "matches": 0,
+      "latencies": [
+        4328000000,
+        4328000000,
+        3747000000,
+        3911000000,
+        3833000000,
+        3917000000,
+        3692000000,
+        3718000000,
+        3162000000,
+        3370000000,
+        3866000000,
+        3956000000,
+        3840000000,
+        3935000000,
+        3924000000,
+        3886000000,
+        3900000000,
+        3693000000,
+        3853000000,
+        3717000000,
+        3795000000,
+        3740000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:36.444Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 0,
+      "requestsCompleted": 22,
+      "latency": {
+        "min": 898,
+        "max": 5588,
+        "median": 3785,
+        "p95": 5557.4,
+        "p99": 5588
+      },
+      "rps": {
+        "count": 22,
+        "mean": 2.17
+      },
+      "scenarioDuration": {
+        "min": null,
+        "max": null,
+        "median": null,
+        "p95": null,
+        "p99": null
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 22
+      },
+      "matches": 0,
+      "latencies": [
+        3990000000,
+        3861000000,
+        3768000000,
+        3780000000,
+        3734000000,
+        898000000,
+        3818000000,
+        951000000,
+        5588000000,
+        3706000000,
+        5537000000,
+        3755000000,
+        5462000000,
+        3948000000,
+        3788000000,
+        3953000000,
+        3743000000,
+        3783000000,
+        3740000000,
+        3830000000,
+        3787000000,
+        3754000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 8,
+      "pendingRequests": 20,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:46.484Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 1,
+      "requestsCompleted": 20,
+      "latency": {
+        "min": 2962,
+        "max": 4593,
+        "median": 3695.5,
+        "p95": 4251,
+        "p99": 4593
+      },
+      "rps": {
+        "count": 19,
+        "mean": 1.89
+      },
+      "scenarioDuration": {
+        "min": 189917.7,
+        "max": 189917.7,
+        "median": 189917.7,
+        "p95": 189917.7,
+        "p99": 189917.7
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 20
+      },
+      "matches": 0,
+      "latencies": [
+        3628000000,
+        3553000000,
+        3719000000,
+        3768000000,
+        3909000000,
+        3781000000,
+        3837000000,
+        2962000000,
+        3892000000,
+        4593000000,
+        3654000000,
+        3697000000,
+        3465000000,
+        3694000000,
+        3557000000,
+        3603000000,
+        3534000000,
+        3655000000,
+        3717000000,
+        3808000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 7,
+      "pendingRequests": 19,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:55.981Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 6,
+      "requestsCompleted": 19,
+      "latency": {
+        "min": 1030,
+        "max": 5069,
+        "median": 3744,
+        "p95": 4997,
+        "p99": 5069
+      },
+      "rps": {
+        "count": 13,
+        "mean": 1.37
+      },
+      "scenarioDuration": {
+        "min": 195482.3,
+        "max": 200058,
+        "median": 198839.4,
+        "p95": 200058,
+        "p99": 200058
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 19
+      },
+      "matches": 0,
+      "latencies": [
+        4483000000,
+        4256000000,
+        4023000000,
+        3994000000,
+        3328000000,
+        4296000000,
+        2600000000,
+        4210000000,
+        3420000000,
+        4478000000,
+        3729000000,
+        5069000000,
+        3744000000,
+        4909000000,
+        3248000000,
+        2987000000,
+        1694000000,
+        1650000000,
+        1030000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 1,
+      "pendingRequests": 13,
+      "scenariosAvoided": 0
+    },
+    {
+      "timestamp": "2024-10-24T22:24:56.452Z",
+      "scenariosCreated": 0,
+      "scenariosCompleted": 1,
+      "requestsCompleted": 1,
+      "latency": {
+        "min": 1109,
+        "max": 1109,
+        "median": 1109,
+        "p95": 1109,
+        "p99": 1109
+      },
+      "rps": {
+        "count": 0,
+        "mean": null
+      },
+      "scenarioDuration": {
+        "min": 200875.1,
+        "max": 200875.1,
+        "median": 200875.1,
+        "p95": 200875.1,
+        "p99": 200875.1
+      },
+      "scenarioCounts": {},
+      "errors": {},
+      "codes": {
+        "200": 1
+      },
+      "matches": 0,
+      "latencies": [
+        1109000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 0,
+      "pendingRequests": 12,
+      "scenariosAvoided": 0
     }
   ]
 }
