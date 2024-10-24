@@ -1,0 +1,30 @@
+config:
+  target: "http://localhost:5000"
+  phases:
+    - duration: 10
+      arrivalRate: 10 # Número de solicitudes por segundo
+  defaults:
+    headers:
+      content-type: "application/json"
+
+scenarios:
+  - name: Crear, leer y eliminar usuarios
+    flow:
+      # Crear un usuario
+      - get:
+          url: "/api/user-mock/createUser"
+          capture:
+            - json: "$.message._id" # Captura el ID del usuario creado desde la respuesta
+              as: "userId"
+
+      # Leer el usuario creado
+      - get:
+          url: "/api/user/{{ userId }}"
+          expect:
+            - statusCode: 200
+
+      # Eliminar el usuario
+      - delete:
+          url: "/api/user/{{ userId }}"
+          expect:
+            - statusCode: 200
