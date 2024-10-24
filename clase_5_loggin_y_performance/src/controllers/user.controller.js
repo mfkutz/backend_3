@@ -31,6 +31,16 @@ export class UserController {
     }
   }
 
+  static async getUserById(req, res, next) {
+    const { id } = req.params;
+    try {
+      const user = await UserService.getById(id);
+      res.status(200).json({ response: "OK", user });
+    } catch (error) {
+      next(error);
+    }
+  }
+
   static async deleteUser(req, res, next) {
     const { id } = req.params;
     try {

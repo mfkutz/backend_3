@@ -1,22 +1,30 @@
 config:
-  pluggins:
-    metrics-by-endpoint: {}
-  target: http://localhost:8080/api
+  target: "http://localhost:5000"
   phases:
-    - duration: 20
-      arrivalRate: 20
+    - duration: 10
+      arrivalRate: 10 # Número de solicitudes por segundo
+  defaults:
+    headers:
+      content-type: "application/json"
+
 scenarios:
-  - name: create, read & destroy one user
+  - name: Crear, leer y eliminar usuarios
     flow:
-      - log: create one mock
+      # Crear un usuario
       - get:
-          url: /users/mocks
+          url: "/api/user-mock/createUser"
           capture:
-            - json: $.response._id
-              as: uid
-      - log: read one mock
+            - json: "$.message._id" # Captura el ID del usuario creado desde la respuesta
+              as: "userId"
+
+      # Leer el usuario creado
       - get:
-          url: /users/{{uid}}
-      - log: destroy one mock
+          url: "/api/user/{{ userId }}"
+          expect:
+            - statusCode: 200
+
+      # Eliminar el usuario
       - delete:
-          url: /users/{{uid}}
+          url: "/api/user/{{ userId }}"
+          expect:
+            - statusCode: 200

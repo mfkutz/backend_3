@@ -5,6 +5,10 @@ export class UserService {
     return await userModel.find();
   }
 
+  static async getById(id) {
+    return await userModel.findById(id);
+  }
+
   static async createUser(user) {
     return await userModel.create(user);
   }

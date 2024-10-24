@@ -1,1 +1,2 @@
 [31mfatal[39m: MongoDB connection error: mongoose.connec is not a function {"timestamp":"2024-10-23T15:58:54.964Z"}
+[31mfatal[39m: GET /api/user/671a2e0ca94744d4a3e250a3 - RES.SSTATUS IS NOT A FUNCTION {"timestamp":"2024-10-24T11:32:25.332Z"}

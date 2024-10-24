@@ -3,7 +3,7 @@ import { UserMock } from "../controllers/user.mock.js";
 
 const router = Router();
 
-router.post("/createUser", UserMock.createUser);
-router.post("/createUsers/:quantity", UserMock.createUsers);
+router.get("/createUser", UserMock.createUser);
+router.get("/createUsers/:quantity", UserMock.createUsers);
 
 export default router;
