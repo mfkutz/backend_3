@@ -167,3 +167,5 @@
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-24T22:24:58.743Z"}
 [34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-24T22:25:00.367Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-24T22:25:00.415Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-24T22:25:00.843Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-24T22:25:00.867Z"}
