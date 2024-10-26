@@ -51,10 +51,13 @@ if (cluster.isPrimary) {
     console.log(`Worker ${worker.process.pid} died, restarting...`);
     cluster.fork();
   });
-} else {
-  // Workers escuchando en el puerto configurado
+
+  //  El servidor escucha solo en el proceso primario
   app.listen(PORT, () => {
-    console.log(`Worker ${process.pid} listening on port ${PORT}`);
-    winstonLogger.info(`Worker listening on PORT:${PORT}`);
+    console.log(`Primary process listening on port ${PORT}`);
+    winstonLogger.info(`Primary process listening on PORT:${PORT}`);
   });
+} else {
+  // Workers ejecutan las tareas pero no escuchan en el puerto
+  console.log(`Worker ${process.pid} started`);
 }

@@ -169,3 +169,90 @@
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-24T22:25:00.415Z"}
 [34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-24T22:25:00.843Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-24T22:25:00.867Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T13:00:56.226Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T13:00:57.685Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T13:00:57.710Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T13:00:57.715Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T13:00:57.739Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T13:03:56.486Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T13:03:57.869Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T13:03:57.880Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T13:03:57.889Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T13:03:57.902Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:38:53.090Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T14:38:55.288Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:38:55.353Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T14:38:55.458Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:38:55.521Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:38:56.930Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T14:38:59.355Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:38:59.379Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T14:38:59.373Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:38:59.402Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:53:06.255Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T14:53:07.674Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:53:07.706Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T14:53:07.722Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T14:53:07.743Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T15:39:09.204Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T15:39:13.613Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T15:39:15.717Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T15:39:15.750Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T15:39:15.829Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T15:39:15.883Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T16:50:48.584Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T16:50:50.023Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T16:50:50.041Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T16:50:50.179Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T16:50:50.211Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T16:51:15.891Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T16:51:17.873Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T16:51:17.895Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T16:51:17.944Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T16:51:17.962Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T19:46:03.533Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T19:46:05.538Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T19:46:05.545Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T19:46:05.561Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T19:46:05.567Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T19:46:18.776Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T19:46:20.512Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T19:46:20.570Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T19:46:20.576Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T19:46:20.608Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T20:59:23.743Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:00:05.498Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:10:47.808Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T21:10:49.173Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:10:49.190Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T21:10:49.261Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:10:49.280Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:12:38.877Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:12:47.511Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T21:12:48.987Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:12:49.017Z"}
+[34minfo[39m: Worker listening on PORT:5000 {"timestamp":"2024-10-25T21:12:49.011Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:12:49.044Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:14:03.372Z"}
+[34minfo[39m: Worker listening on PORT:6000 {"timestamp":"2024-10-25T21:14:04.830Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:14:04.861Z"}
+[34minfo[39m: Worker listening on PORT:6000 {"timestamp":"2024-10-25T21:14:04.934Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:14:04.955Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:14:23.319Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:19:31.508Z"}
+[34minfo[39m: Primary process listening on PORT:8080 {"timestamp":"2024-10-25T21:25:24.499Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:25:24.535Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:25:25.981Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:25:26.082Z"}
+[34minfo[39m: Primary process listening on PORT:5000 {"timestamp":"2024-10-25T21:31:18.784Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:31:18.815Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:31:20.230Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:31:20.305Z"}
+[34minfo[39m: Primary process listening on PORT:8080 {"timestamp":"2024-10-25T21:32:03.322Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:32:03.354Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:32:04.759Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-25T21:32:04.962Z"}
+[34minfo[39m: Primary process listening on PORT:8080 {"timestamp":"2024-10-26T00:30:16.602Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-26T00:30:18.051Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-26T00:30:19.506Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-26T00:30:19.536Z"}
