@@ -256,3 +256,7 @@
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-26T00:30:18.051Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-26T00:30:19.506Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-10-26T00:30:19.536Z"}
+[34minfo[39m: Primary process listening on PORT:5000 {"timestamp":"2024-11-04T21:21:51.532Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T21:21:51.609Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T21:21:52.938Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T21:21:52.987Z"}

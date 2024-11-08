@@ -63,7 +63,6 @@ export class ProductController {
     try {
       const product = await ProductService.delete(id);
       if (!product) CustomError.newError(errors.notFound);
-
       res.status(200).json({ response: "Product deleted successfully", message: product });
     } catch (error) {
       next(error);
